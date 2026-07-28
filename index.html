@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#d71920">
-  <meta name="description" content="Guide ELA : toutes les informations utiles pour votre location de véhicule à La Réunion.">
+  <meta name="description" content="Guide ELA : assistance, panne, accident, restitution, agences et informations utiles.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/logo-ela.png">
   <link rel="stylesheet" href="style.css">
@@ -17,10 +17,10 @@
       <img class="logo" src="assets/logo-ela.png" alt="ELA Location">
       <span class="eyebrow">Guide ELA</span>
       <h1>Votre location en toute sérénité</h1>
-      <p>Toutes les informations utiles, accessibles en un seul endroit.</p>
+      <p>Toutes les informations utiles pour votre location, accessibles en un seul endroit.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#assistance">Assistance</a>
-        <a class="btn btn-secondary" href="#accident">Accident ou panne</a>
+        <a class="btn btn-primary" href="#assistance">Besoin d’aide</a>
+        <a class="btn btn-secondary" href="#urgence">Panne ou accident</a>
       </div>
     </div>
   </header>
@@ -28,10 +28,11 @@
   <nav class="quick-nav">
     <div class="container nav-scroll">
       <a href="#assistance">Assistance</a>
-      <a href="#accident">Accident</a>
+      <a href="#urgence">Panne / Accident</a>
+      <a href="#essentiels">Essentiels</a>
+      <a href="#retour">Restitution</a>
+      <a href="#conditions">Conditions</a>
       <a href="#agences">Agences</a>
-      <a href="#conseils">Conseils</a>
-      <a href="#reunion">La Réunion</a>
       <a href="#reservation">Réserver</a>
     </div>
   </nav>
@@ -40,42 +41,143 @@
     <section class="intro">
       <p class="eyebrow">Bienvenue</p>
       <h2>Merci d’avoir choisi ELA Location</h2>
-      <p>Retrouvez ici les contacts utiles, les consignes essentielles et nos adresses.</p>
+      <p>Retrouvez ici les contacts utiles, les consignes essentielles et les principales informations liées à votre location.</p>
     </section>
 
     <section id="assistance">
       <p class="eyebrow">Accès rapide</p>
       <h2>Besoin d’aide ?</h2>
-      <div class="action-grid">
+      <div class="action-grid four">
         <a class="action-card red" href="tel:+262263083141">
           <span class="icon">☎</span>
-          <strong>Appeler</strong>
+          <strong>ELA Location</strong>
           <small>0263 08 31 41</small>
+          <em>Pendant les horaires d’ouverture</em>
+        </a>
+        <a class="action-card orange" href="tel:+262262204848">
+          <span class="icon">🚛</span>
+          <strong>Assistance 24h/24</strong>
+          <small>0262 20 48 48</small>
+          <em>Panne, vol ou véhicule immobilisé</em>
         </a>
         <a class="action-card green" href="https://wa.me/262693865294" target="_blank" rel="noopener">
           <span class="icon">💬</span>
           <strong>WhatsApp</strong>
-          <small>Écrire à ELA</small>
+          <small>0693 86 52 94</small>
+          <em>Photos et informations utiles</em>
         </a>
         <a class="action-card dark" href="mailto:resa@elalocation.fr">
           <span class="icon">✉</span>
           <strong>E-mail</strong>
           <small>resa@elalocation.fr</small>
+          <em>Réservations et demandes</em>
         </a>
       </div>
     </section>
 
-    <section id="accident">
-      <p class="eyebrow">Urgence</p>
-      <h2>Accident ou panne</h2>
-      <div class="steps">
-        <article><span>1</span><div><strong>Mettez-vous en sécurité</strong><p>Allumez les feux de détresse et éloignez-vous du danger si possible.</p></div></article>
-        <article><span>2</span><div><strong>Appelez ELA Location</strong><p>Contactez-nous avant toute réparation ou tout remorquage.</p></div></article>
-        <article><span>3</span><div><strong>Appelez les secours si nécessaire</strong><p>En cas de blessé ou de danger immédiat, composez le 112.</p></div></article>
-        <article><span>4</span><div><strong>Prenez des photos</strong><p>Photographiez les véhicules, les dommages et le lieu.</p></div></article>
-        <article><span>5</span><div><strong>Remplissez le constat</strong><p>Notez les coordonnées des personnes impliquées.</p></div></article>
+    <section id="urgence">
+      <p class="eyebrow">Que faire ?</p>
+      <h2>Panne ou accident</h2>
+      <div class="emergency-grid">
+        <article class="emergency-card breakdown">
+          <div class="emergency-head">
+            <span>🚗</span>
+            <div>
+              <h3>En cas de panne</h3>
+              <p>Suivez la procédure adaptée à l’horaire.</p>
+            </div>
+          </div>
+
+          <div class="time-block">
+            <strong>Pendant les horaires d’ouverture</strong>
+            <p>Contactez ELA Location au <a href="tel:+262263083141">0263 08 31 41</a>.</p>
+          </div>
+
+          <div class="time-block highlighted">
+            <strong>En dehors des horaires d’ouverture</strong>
+            <p>Contactez directement l’assistance remorquage 24h/24 au <a href="tel:+262262204848">0262 20 48 48</a>.</p>
+          </div>
+
+          <p class="note">Informez ensuite ELA Location dès que possible. Ne faites engager aucune réparation sans accord préalable.</p>
+        </article>
+
+        <article class="emergency-card accident">
+          <div class="emergency-head">
+            <span>🚨</span>
+            <div>
+              <h3>En cas d’accident</h3>
+              <p>Restez calme et procédez dans cet ordre.</p>
+            </div>
+          </div>
+
+          <ol class="compact-steps">
+            <li><span>1</span><div><strong>Mettez-vous en sécurité</strong><p>Feux de détresse et éloignement du danger si possible.</p></div></li>
+            <li><span>2</span><div><strong>Appelez les secours si nécessaire</strong><p>Composez le 112 en cas de blessé ou de danger immédiat.</p></div></li>
+            <li><span>3</span><div><strong>Prenez des photos</strong><p>Véhicules, dégâts, plaques et lieu de l’accident.</p></div></li>
+            <li><span>4</span><div><strong>Remplissez le constat</strong><p>Notez les coordonnées des personnes et témoins.</p></div></li>
+            <li><span>5</span><div><strong>Contactez ELA Location et l’assistance</strong><p>Suivez leurs instructions avant toute intervention.</p></div></li>
+          </ol>
+        </article>
       </div>
-      <div class="warning">Aucune réparation ne doit être engagée sans l’accord préalable d’ELA Location.</div>
+    </section>
+
+    <section id="essentiels">
+      <p class="eyebrow">Pendant votre location</p>
+      <h2>Les essentiels</h2>
+      <div class="cards four">
+        <article class="card"><span class="big-icon">⛽</span><h3>Carburant</h3><p>Restituez le véhicule avec le même niveau de carburant qu’au départ.</p></article>
+        <article class="card"><span class="big-icon">🚭</span><h3>Véhicule non-fumeur</h3><p>Il est interdit de fumer ou de vapoter dans le véhicule.</p></article>
+        <article class="card"><span class="big-icon">🔐</span><h3>Objets personnels</h3><p>Ne laissez aucun objet de valeur visible dans l’habitacle.</p></article>
+        <article class="card"><span class="big-icon">🧽</span><h3>Véhicule propre</h3><p>Merci de restituer le véhicule propre et dans un état conforme au départ.</p></article>
+        <article class="card"><span class="big-icon">⏰</span><h3>Heure de restitution</h3><p>Respectez l’heure de restitution prévue au contrat.</p></article>
+        <article class="card"><span class="big-icon">🌋</span><h3>Routes de montagne</h3><p>Adaptez votre vitesse et utilisez le frein moteur dans les descentes.</p></article>
+        <article class="card"><span class="big-icon">🌧</span><h3>Pluie</h3><p>Ralentissez fortement en cas de chaussée mouillée ou de visibilité réduite.</p></article>
+        <article class="card"><span class="big-icon">🅿</span><h3>Stationnement</h3><p>Respectez la signalisation et verrouillez toujours le véhicule.</p></article>
+      </div>
+    </section>
+
+    <section id="retour">
+      <p class="eyebrow">Avant votre retour</p>
+      <h2>Checklist de restitution</h2>
+      <div class="checklist">
+        <label><input type="checkbox"> Même niveau de carburant qu’au départ</label>
+        <label><input type="checkbox"> Véhicule rendu propre</label>
+        <label><input type="checkbox"> Aucun effet personnel oublié</label>
+        <label><input type="checkbox"> Heure de restitution respectée</label>
+        <label><input type="checkbox"> Clés et documents prêts à être remis</label>
+      </div>
+    </section>
+
+    <section id="conditions">
+      <p class="eyebrow">Résumé pratique</p>
+      <h2>Conditions essentielles</h2>
+      <div class="conditions">
+        <details open>
+          <summary>Conducteurs autorisés</summary>
+          <p>Seuls les conducteurs inscrits au contrat sont autorisés à conduire le véhicule.</p>
+        </details>
+        <details>
+          <summary>Utilisation du véhicule</summary>
+          <p>Respectez le Code de la route. Les pistes, ravines et voies non goudronnées sont interdites.</p>
+        </details>
+        <details>
+          <summary>Carburant</summary>
+          <p>Restituez le véhicule avec le même niveau de carburant. En cas d’erreur de carburant, ne redémarrez pas et contactez immédiatement ELA Location.</p>
+        </details>
+        <details>
+          <summary>Restitution</summary>
+          <p>Le véhicule doit être restitué propre, avec ses clés originales, à la date et à l’heure prévues au contrat.</p>
+        </details>
+        <details>
+          <summary>Panne, accident ou vol</summary>
+          <p>Contactez l’assistance 24h/24 au 0262 20 48 48 et informez ELA Location. Aucune réparation ne doit être réalisée sans accord.</p>
+        </details>
+        <details>
+          <summary>Prolongation</summary>
+          <p>Toute prolongation doit être demandée à l’avance et reste soumise à l’accord d’ELA Location.</p>
+        </details>
+      </div>
+      <p class="legal-note">Ce résumé ne remplace pas les conditions générales signées lors de la location.</p>
     </section>
 
     <section id="agences">
@@ -83,39 +185,15 @@
       <h2>Nos agences</h2>
       <div class="cards two">
         <article class="card">
-          <h3>Saint-Paul</h3>
+          <h3>Agence Ouest — Saint-Paul</h3>
           <p>6 rue du Commerce<br>97460 Saint-Paul</p>
           <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=6+rue+du+Commerce+97460+Saint-Paul">Ouvrir l’itinéraire →</a>
         </article>
         <article class="card">
-          <h3>Sainte-Marie</h3>
+          <h3>Agence Nord — Sainte-Marie</h3>
           <p>122 avenue Desbassyns<br>97438 Grande Montée, Sainte-Marie</p>
           <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=122+avenue+Desbassyns+97438+Sainte-Marie">Ouvrir l’itinéraire →</a>
         </article>
-      </div>
-    </section>
-
-    <section id="conseils">
-      <p class="eyebrow">Pendant votre location</p>
-      <h2>Les essentiels</h2>
-      <div class="cards three">
-        <article class="card"><span class="big-icon">⛽</span><h3>Carburant</h3><p>Restituez le véhicule avec le même niveau de carburant qu’au départ.</p></article>
-        <article class="card"><span class="big-icon">🚭</span><h3>Véhicule non-fumeur</h3><p>Il est interdit de fumer ou de vapoter dans le véhicule.</p></article>
-        <article class="card"><span class="big-icon">🔐</span><h3>Objets personnels</h3><p>Ne laissez aucun objet de valeur visible dans l’habitacle.</p></article>
-        <article class="card"><span class="big-icon">🌋</span><h3>Routes de montagne</h3><p>Adaptez votre vitesse et utilisez le frein moteur dans les descentes.</p></article>
-        <article class="card"><span class="big-icon">🌧</span><h3>Pluie</h3><p>Ralentissez fortement en cas de chaussée mouillée ou de visibilité réduite.</p></article>
-        <article class="card"><span class="big-icon">🅿</span><h3>Stationnement</h3><p>Respectez la signalisation et verrouillez toujours le véhicule.</p></article>
-      </div>
-    </section>
-
-    <section id="reunion">
-      <p class="eyebrow">Inspiration</p>
-      <h2>Découvrir La Réunion</h2>
-      <div class="destination-grid">
-        <a class="destination volcano" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Piton+de+la+Fournaise"><span>Piton de la Fournaise</span></a>
-        <a class="destination beach" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Plage+de+Grande+Anse+La+Réunion"><span>Grande Anse</span></a>
-        <a class="destination waterfall" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cascade+de+Langevin"><span>Langevin</span></a>
-        <a class="destination mountain" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Le+Maïdo"><span>Le Maïdo</span></a>
       </div>
     </section>
 
@@ -137,6 +215,7 @@
   </footer>
 
   <div class="floating">
+    <a class="assist" href="tel:+262262204848" aria-label="Assistance 24h sur 24">🚛</a>
     <a class="call" href="tel:+262263083141" aria-label="Appeler ELA">☎</a>
     <a class="wa" href="https://wa.me/262693865294" target="_blank" rel="noopener" aria-label="WhatsApp ELA">💬</a>
   </div>
