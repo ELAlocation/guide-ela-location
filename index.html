@@ -7,6 +7,7 @@
   <meta name="description" content="Guide ELA : assistance, panne, accident, restitution, agences et informations utiles.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/logo-ela.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="style.css">
   <title>Guide ELA</title>
 </head>
@@ -33,6 +34,8 @@
       <a href="#retour">Restitution</a>
       <a href="#conditions">Conditions</a>
       <a href="#agences">Agences</a>
+      <a href="#carte">Carte Réunion</a>
+      <a href="#avis">Avis Google</a>
       <a href="#reservation">Réserver</a>
     </div>
   </nav>
@@ -47,7 +50,7 @@
     <section id="assistance">
       <p class="eyebrow">Accès rapide</p>
       <h2>Besoin d’aide ?</h2>
-      <div class="action-grid four">
+      <div class="action-grid five">
         <a class="action-card red" href="tel:+262263083141">
           <span class="icon">☎</span>
           <strong>ELA Location</strong>
@@ -66,6 +69,12 @@
           <small>0693 86 52 94</small>
           <em>Photos et informations utiles</em>
         </a>
+        <button class="action-card blue gps-card" id="send-location" type="button">
+          <span class="icon">📍</span>
+          <strong>Envoyer ma position</strong>
+          <small>Par WhatsApp</small>
+          <em>Utile en cas de panne ou d’immobilisation</em>
+        </button>
         <a class="action-card dark" href="mailto:resa@elalocation.fr">
           <span class="icon">✉</span>
           <strong>E-mail</strong>
@@ -197,6 +206,53 @@
       </div>
     </section>
 
+
+    <section id="carte">
+      <p class="eyebrow">À découvrir</p>
+      <h2>Les plus beaux sites de La Réunion</h2>
+      <p class="section-intro">Touchez un repère sur la carte ou choisissez directement un lieu.</p>
+
+      <div id="reunion-map" aria-label="Carte des sites incontournables de La Réunion"></div>
+
+      <div class="site-grid">
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Piton+de+la+Fournaise">
+          <span>🌋</span><div><strong>Piton de la Fournaise</strong><small>Volcan et paysages lunaires</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Le+Maïdo+La+Réunion">
+          <span>🌄</span><div><strong>Le Maïdo</strong><small>Panorama sur Mafate</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Plage+de+l'Hermitage+La+Réunion">
+          <span>🏖</span><div><strong>L’Hermitage</strong><small>Lagon et plage</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Plage+de+Grande+Anse+La+Réunion">
+          <span>🌴</span><div><strong>Grande Anse</strong><small>Plage et aire de détente</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cascade+de+Langevin+Grand+Galet">
+          <span>🌊</span><div><strong>Langevin</strong><small>Cascades de Grand Galet</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Salazie+La+Réunion">
+          <span>⛰</span><div><strong>Salazie</strong><small>Cirque, cascades et villages</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cilaos+La+Réunion">
+          <span>🥾</span><div><strong>Cilaos</strong><small>Cirque et routes de montagne</small></div>
+        </a>
+        <a class="site-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cap+Méchant+La+Réunion">
+          <span>🌊</span><div><strong>Cap Méchant</strong><small>Falaises et côte sauvage</small></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="avis" class="review-card">
+      <div>
+        <p class="eyebrow light">Votre expérience</p>
+        <h2>Votre avis compte</h2>
+        <p>Votre retour aide ELA Location à améliorer ses services et à se faire connaître.</p>
+      </div>
+      <a class="btn white" href="https://www.google.com/search?q=ELA+Location+Saint-Paul+La+Réunion+avis" target="_blank" rel="noopener">
+        ⭐ Donner un avis Google
+      </a>
+    </section>
+
     <section id="reservation" class="cta">
       <p class="eyebrow light">Votre prochain trajet</p>
       <h2>Réserver un véhicule</h2>
@@ -220,6 +276,7 @@
     <a class="wa" href="https://wa.me/262693865294" target="_blank" rel="noopener" aria-label="WhatsApp ELA">💬</a>
   </div>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="app.js"></script>
 </body>
 </html>

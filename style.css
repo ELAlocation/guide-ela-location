@@ -14,3 +14,20 @@ main{padding:24px 0 70px}section{margin-bottom:36px}.intro{padding:8px 0 4px}.in
 .cta{background:linear-gradient(135deg,var(--red),var(--red-dark));color:#fff;border-radius:26px;padding:30px}.cta p{color:#ffe6e7}footer{background:#111;color:#fff;padding:34px 0}footer img{width:220px;background:#fff;border-radius:14px;padding:8px 12px}footer p{color:#ccc;margin:8px 0}.floating{position:fixed;right:16px;bottom:16px;z-index:20;display:flex;flex-direction:column;gap:10px}.floating a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.25rem;box-shadow:0 10px 25px rgba(0,0,0,.22)}.assist{background:var(--orange)}.call{background:var(--red)}.wa{background:var(--green)}
 @media(max-width:980px){.action-grid,.cards.four{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:780px){.action-grid,.cards.two,.cards.four,.emergency-grid{grid-template-columns:1fr}.hero{min-height:68vh}.hero-content{padding:36px 0 42px}}
+
+.action-grid.five{grid-template-columns:repeat(5,1fr)}
+.action-card.blue{background:#1769aa;border:0;text-align:left;font-family:inherit;cursor:pointer}
+.action-card.blue:hover{filter:brightness(1.05)}
+.section-intro{color:var(--muted);margin-top:-4px}
+#reunion-map{height:430px;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);margin-top:18px}
+.site-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.site-card{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+.site-card>span{font-size:1.5rem}
+.site-card strong{display:block}
+.site-card small{display:block;color:var(--muted);margin-top:2px}
+.review-card{display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(135deg,#171717,#343434);color:#fff;border-radius:26px;padding:30px}
+.review-card p{color:#ddd;margin-bottom:0}
+.leaflet-popup-content strong{font-size:1rem}
+.leaflet-popup-content a{display:inline-block;margin-top:6px;color:var(--red);font-weight:900}
+@media(max-width:1100px){.action-grid.five{grid-template-columns:repeat(3,1fr)}.site-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:780px){.action-grid.five,.site-grid{grid-template-columns:1fr}.review-card{align-items:flex-start;flex-direction:column}#reunion-map{height:360px}}
